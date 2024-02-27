@@ -58,6 +58,9 @@ class GeminiLLM(BaseLLM):
         self.llm = GeminiGenerativeModel(model_name=self.model)
 
     def __init_gemini(self, config: LLMConfig):
+        if config.proxy:
+            import os
+            os.environ["HTTP_PROXY"] = "http://127.0.0.1:7890"
         genai.configure(api_key=config.api_key)
 
     def _user_msg(self, msg: str, images: Optional[Union[str, list[str]]] = None) -> dict[str, str]:

@@ -1,7 +1,16 @@
 # Full Example: https://github.com/geekan/MetaGPT/blob/main/config/config2.example.yaml
 # Reflected Code: https://github.com/geekan/MetaGPT/blob/main/metagpt/config2.py
 llm:
-  api_type: "openai"  # or azure / ollama / open_llm etc. Check LLMType for more options
-  model: "gpt-4-turbo-preview"  # or gpt-3.5-turbo-1106 / gpt-4-1106-preview
-  base_url: "https://api.openai.com/v1"  # or forward url / other llm url
-  api_key: "YOUR_API_KEY"
+  api_type: "gemini"  # or azure / ollama / open_llm etc. Check LLMType for more options
+  model: "gemini-pro"  # or gpt-3.5-turbo-1106 / gpt-4-1106-preview
+  # base_url: ""  # or forward url / other llm url
+  api_key: "AIzaSyAiX6kAE4djinBWdQmW01p_yvZ9Gsm0DEc"
+  proxy: "http://127.0.0.1:7890"
+# language: "Chinese"
+# GLOBAL_PROXY: "http://127.0.0.1:7890"
+  # api_type: "spark"
+  # app_id: "bcd04e39"
+  # api_key: "74ef722320c9b7955d206b3b4ab98d8b"
+  # api_secret: "OGE1ZGM5YmZhMWRiZWViMmFkZmQ3NmIx"
+  # domain: "generalv3.5"
+  # base_url: "wss://spark-api.xf-yun.com/v3.5/chat"
